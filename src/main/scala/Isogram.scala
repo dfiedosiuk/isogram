@@ -1,7 +1,13 @@
 object Isogram extends App {
 
   def check(word: String): Boolean ={
-    true
+    val allowedSigns = ('a'to'z').toList ++ List(' ', '-')
+    val signs = word
+      .toLowerCase
+      .toList
+      .filter(('a'to'z').contains)
+    if (signs == signs.distinct) true
+    else false
   }
 
 }
