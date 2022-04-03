@@ -1,7 +1,6 @@
 object Isogram extends App {
 
   def check(word: String): Boolean ={
-    val allowedSigns = ('a'to'z').toList ++ List(' ', '-')
     val signs = word
       .toLowerCase
       .toList
